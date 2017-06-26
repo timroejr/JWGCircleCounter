@@ -1,73 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="iif-uK-E1R">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hDt-qH-YD7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="MTn-Bk-0NE">
+        <scene sceneID="xo0-t7-jvL">
             <objects>
-                <viewController id="iif-uK-E1R" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="hDt-qH-YD7" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CB4-Oj-BW6"/>
-                        <viewControllerLayoutGuide type="bottom" id="frZ-xd-G2u"/>
+                        <viewControllerLayoutGuide type="top" id="Bs0-lp-63N"/>
+                        <viewControllerLayoutGuide type="bottom" id="JEP-fT-fre"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7S2-mS-Xy2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="Gj1-jn-zCB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sbc-sK-pYS" customClass="JWGCircleCounter">
-                                <rect key="frame" x="120" y="149" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f83-x9-flD" customClass="JWGCircleCounter">
+                                <rect key="frame" x="137" y="77" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 seconds (configurable)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzC-ju-j3J">
-                                <rect key="frame" x="46" y="257" width="228" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFZ-zk-Gdv">
+                                <rect key="frame" x="104" y="220" width="166" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuV-Lv-Iah">
-                                <rect key="frame" x="120" y="336" width="81" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3by-dK-hz8">
+                                <rect key="frame" x="168" y="462" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
                                 <connections>
-                                    <action selector="startButtonAction:" destination="iif-uK-E1R" eventType="touchUpInside" id="YBl-SI-MI1"/>
+                                    <action selector="resetButtonAction:" destination="hDt-qH-YD7" eventType="touchUpInside" id="Lh7-48-T8B"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeQ-if-Lc3">
-                                <rect key="frame" x="137" y="381" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwP-wX-sPI">
+                                <rect key="frame" x="141" y="401" width="93" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="Xa5-0v-Fhw"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
                                 <connections>
-                                    <action selector="resetButtonAction:" destination="iif-uK-E1R" eventType="touchUpInside" id="9hf-Fe-32P"/>
+                                    <action selector="startButtonAction:" destination="hDt-qH-YD7" eventType="touchUpInside" id="ACF-m9-7Fn"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3by-dK-hz8" firstAttribute="top" secondItem="MwP-wX-sPI" secondAttribute="bottom" constant="31" id="4Ho-AR-alB"/>
+                            <constraint firstItem="XFZ-zk-Gdv" firstAttribute="centerX" secondItem="MwP-wX-sPI" secondAttribute="centerX" id="6SH-fk-hGB"/>
+                            <constraint firstItem="XFZ-zk-Gdv" firstAttribute="top" secondItem="Gj1-jn-zCB" secondAttribute="top" constant="220" id="7dQ-af-dhQ"/>
+                            <constraint firstItem="XFZ-zk-Gdv" firstAttribute="top" secondItem="f83-x9-flD" secondAttribute="bottom" constant="43" id="DNq-Jp-fpd"/>
+                            <constraint firstItem="f83-x9-flD" firstAttribute="top" secondItem="Bs0-lp-63N" secondAttribute="bottom" constant="57" id="ERu-mV-R3G"/>
+                            <constraint firstItem="f83-x9-flD" firstAttribute="leading" secondItem="Gj1-jn-zCB" secondAttribute="leading" constant="137" id="PRf-5t-ssf"/>
+                            <constraint firstItem="f83-x9-flD" firstAttribute="centerX" secondItem="Gj1-jn-zCB" secondAttribute="centerX" id="Z48-A4-wyi"/>
+                            <constraint firstItem="XFZ-zk-Gdv" firstAttribute="leading" secondItem="Gj1-jn-zCB" secondAttribute="leadingMargin" constant="88" id="ZtD-oc-Ohs"/>
+                            <constraint firstItem="JEP-fT-fre" firstAttribute="top" secondItem="3by-dK-hz8" secondAttribute="bottom" constant="175" id="rKL-sU-Ba7"/>
+                            <constraint firstItem="MwP-wX-sPI" firstAttribute="centerX" secondItem="3by-dK-hz8" secondAttribute="centerX" id="uLo-Eb-Q68"/>
+                            <constraint firstItem="f83-x9-flD" firstAttribute="centerX" secondItem="XFZ-zk-Gdv" secondAttribute="centerX" id="xWX-EM-aPc"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="circleCounter" destination="Sbc-sK-pYS" id="5o8-ic-hVu"/>
-                        <outlet property="resetButton" destination="MeQ-if-Lc3" id="xZF-cY-vGj"/>
-                        <outlet property="secondsLabel" destination="zzC-ju-j3J" id="1L3-7D-2fA"/>
-                        <outlet property="startButton" destination="YuV-Lv-Iah" id="6Df-bE-2La"/>
-                        <outletCollection property="circleCounter" destination="Sbc-sK-pYS" id="5yg-bk-ByN"/>
+                        <outlet property="circleCounter" destination="f83-x9-flD" id="Ikp-AP-CjI"/>
+                        <outlet property="resetButton" destination="3by-dK-hz8" id="Uwe-3t-x4B"/>
+                        <outlet property="secondsLabel" destination="XFZ-zk-Gdv" id="IJq-Tb-cW6"/>
+                        <outlet property="startButton" destination="MwP-wX-sPI" id="QsO-mB-SKv"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qmW-69-vpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6I-Ef-yRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439" y="102"/>
+            <point key="canvasLocation" x="693.60000000000002" y="197.45127436281859"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

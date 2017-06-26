@@ -31,6 +31,7 @@
 
 - (IBAction)startButtonAction:(id)sender {
     if (![self.circleCounter didStart] || [self.circleCounter didFinish]) {
+        //[self.circleCounter startTimerWithElapsedTime:10 atStartingTotalTime:20];
         [self.circleCounter startWithSeconds:3];
         [self.startButton setTitle:@"Pause" forState:UIControlStateNormal];
         self.resetButton.enabled = YES;
