@@ -100,6 +100,25 @@
     [self setNeedsDisplay];
 }
 
+- (void)startTimerWithElapsedTime:(NSTimeInterval)elapsedSeconds atStartingTotalTime:(NSTimeInterval)startingSeconds {
+    [JWGCircleCounter validateInputTime:elapsedSeconds];
+    [JWGCircleCounter validateInputTime:startingSeconds];
+    
+    self.totalTime = startingSeconds;
+    _elapsedTime = elapsedSeconds;
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:JWG_TIMER_INTERVAL target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
+    _isRunning = YES;
+    _didStart = YES;
+    _didFinish = NO;
+    
+    self.lastStartTime = [NSDate dateWithTimeIntervalSinceNow:-_elapsedTime];
+    self.completedTimeUpToLastStop = 0;
+    
+    
+    [self.timer fire];
+    
+}
+
 - (void)timerFired {
     if (!_isRunning) {
         return;

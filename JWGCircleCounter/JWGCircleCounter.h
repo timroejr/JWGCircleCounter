@@ -73,6 +73,16 @@
 - (void)updateElapsedTime:(NSTimeInterval)seconds;
 
 /**
+ * Creates a new timer starting at a certain amount of elapsed time
+ * for a timer with a total amount of seconds. The elapsedSeconds must
+ * be less than the startingSeconds.
+ *
+ * @param elapsedSeconds Total amount of seconds already passed
+ * @param startingSeconds Total amount of seconds overall for time timer.
+ */
+- (void)startTimerWithElapsedTime:(NSTimeInterval)elapsedSeconds atStartingTotalTime:(NSTimeInterval)startingSeconds;
+
+/**
  * Pauses the countdown timer and stops animation. This only has an effect if the
  * counter isRunning.
  */

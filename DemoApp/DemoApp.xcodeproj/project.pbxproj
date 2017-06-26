@@ -26,8 +26,9 @@
 		A9A97D1D18EC9A8500F45633 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A97CB118EC911C00F45633 /* UIKit.framework */; };
 		A9A97D2318EC9A8500F45633 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9A97D2118EC9A8500F45633 /* InfoPlist.strings */; };
 		A9A97D2518EC9A8500F45633 /* JWGCircleCounterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A97D2418EC9A8500F45633 /* JWGCircleCounterTests.m */; };
-		A9A97D2D18ECAF0200F45633 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A97D2C18ECAF0200F45633 /* Storyboard.storyboard */; };
 		A9A97D3018ECB2FD00F45633 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A97D2F18ECB2FD00F45633 /* ViewController.m */; };
+		B692C8441F009F6D001E25FC /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B692C8431F009F6D001E25FC /* Storyboard.storyboard */; };
+		B692C8461F00A041001E25FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B692C8451F00A041001E25FC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,9 +73,10 @@
 		A9A97D2218EC9A8500F45633 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9A97D2418EC9A8500F45633 /* JWGCircleCounterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JWGCircleCounterTests.m; path = ../../JWGCircleCounterTests/JWGCircleCounterTests.m; sourceTree = "<group>"; };
 		A9A97D2618EC9A8500F45633 /* JWGCircleCounterTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JWGCircleCounterTests-Prefix.pch"; sourceTree = "<group>"; };
-		A9A97D2C18ECAF0200F45633 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		A9A97D2E18ECB2FD00F45633 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A9A97D2F18ECB2FD00F45633 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B692C8431F009F6D001E25FC /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		B692C8451F00A041001E25FC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D121930DD25A4FA2B8FBE6D6 /* libPods-JWGCircleCounterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWGCircleCounterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 		A9A97CA118EC911C00F45633 = {
 			isa = PBXGroup;
 			children = (
+				B692C8451F00A041001E25FC /* LaunchScreen.storyboard */,
 				A9A97CE118EC944C00F45633 /* JWGCircleCounter */,
 				A9A97D1E18EC9A8500F45633 /* JWGCircleCounterTests */,
 				A9A97CB318EC911C00F45633 /* DemoApp */,
@@ -155,7 +158,7 @@
 				A9A97CBD18EC911C00F45633 /* AppDelegate.m */,
 				A9A97D2E18ECB2FD00F45633 /* ViewController.h */,
 				A9A97D2F18ECB2FD00F45633 /* ViewController.m */,
-				A9A97D2C18ECAF0200F45633 /* Storyboard.storyboard */,
+				B692C8431F009F6D001E25FC /* Storyboard.storyboard */,
 				A9A97CBF18EC911C00F45633 /* Images.xcassets */,
 				A9A97CB418EC911C00F45633 /* Supporting Files */,
 			);
@@ -320,8 +323,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9A97CB818EC911C00F45633 /* InfoPlist.strings in Resources */,
+				B692C8461F00A041001E25FC /* LaunchScreen.storyboard in Resources */,
 				A9A97CC018EC911C00F45633 /* Images.xcassets in Resources */,
-				A9A97D2D18ECAF0200F45633 /* Storyboard.storyboard in Resources */,
+				B692C8441F009F6D001E25FC /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -523,12 +527,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoApp/DemoApp-Prefix.pch";
 				INFOPLIST_FILE = "DemoApp/DemoApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -537,12 +542,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoApp/DemoApp-Prefix.pch";
 				INFOPLIST_FILE = "DemoApp/DemoApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
